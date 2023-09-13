@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/581b5c549e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE ENGINEER</p>
+                <h1>HI , MYSELF <br> <span>ASWIN RAJ</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------About------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col01"><img src="images/me.png"></div>
+                <div class="about-col02">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As a software engineer, I'm a dedicated problem solver and a craftsman of digital solutions.
+                         My passion for technology drives me to push boundaries, constantly seeking innovative ways
+                          to build software that not only meets functional requirements but also creates exceptional user experiences. 
+                          With a solid foundation in programming languages, frameworks, and tools, I enjoy architecting and 
+                          developing applications that solve complex challenges. Collaboration is at the heart of my approach, 
+                          as I thrive in cross-functional teams, valuing diverse perspectives and fostering open communication.
+                           Whether it's optimizing code for performance, designing elegant user interfaces, 
+                           or implementing robust security measures, I approach each project with a keen eye for detail and 
+                           a relentless pursuit of excellence.
+                         My mission is to leverage technology to make a meaningful impact,
+                         and I'm excited to continue this journey in the ever-evolving landscape of software engineering.</p>
+                         <div class="tab-titles">
+                            <p class="Tab-links activelink" onclick="opentab('Skills')">Skills</p>
+                            <p class="Tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="Tab-links" onclick="opentab('Experience')">Experience</p>
+                         </div>
+                         <div class="tabcontains activetab" id="Skills">
+                            <ul>
+                                <li><span>SOFTWARE ENGINEER</span><br>WEB DEVELOPMENT</li>
+                                <li><span>MOTION GRAPHICS</span><br>VIDEO EDITING AND ANIMATION</li>
+                                <li><span>GRAPHIC DESIGNING</span><br>PHOTO EDITING</li>
+                            </ul>
+                         </div>
+
+                         <div class="tabcontains  " id="Education">
+                            <ul>
+                                <li><span>High School</span><br>GVHSS Koyilandy,Kozhikode</li>
+                                <li><span>Undergraduation</span><br>Btech in Computer Science From TKM College of Engineering</li>
+                                <li><span>Internship</span><br>__________</li>
+                            </ul>
+                         </div>
+                         <div class="tabcontains " id="Experience">
+                            <ul>
+                                <li><span>NSS</span><br>NSS at Tkmce</li>
+                                <li><span>Freelance</span><br>Video Editor</li>
+                                <!--<li><span></span><br>__________</li>-->
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------SERVICES-->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="Services-List">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEB DESIGNING</h2>
+                    <p>As a web designer, I am a creative digital architect who transforms ideas into visually stunning 
+                        and user-friendly web experiences. With a strong passion for both aesthetics and functionality,
+                         I specialize in crafting websites that not only capture attention but also provide seamless navigation
+                          and accessibility. My expertise extends to designing responsive layouts,
+                         optimizing user interfaces, and staying current with emerging design trends and technologies</p>
+                         <a href="#">Explore More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                   
+                    <h2>Video Editing</h2>
+                    <p>
+                        As a video editor, I am a visual storyteller with a keen eye for detail and a passion for cinematic expression.
+                         With a wealth of experience in editing software and a deep understanding of narrative structure,
+                         I bring stories to life through seamless transitions, captivating effects, and meticulous sound design</p>
+                         <a href="#">Explore More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>
+                        As a graphic designer, I am a creative artist who transforms ideas into visually captivating and impactful designs.
+                         With a strong passion for aesthetics and a commitment to effective communication, 
+                         I specialize in crafting eye-catching visuals that convey messages and tell stories.
+                         My expertise spans a wide range of design elements, including typography, color theory, and layout composition.</p>
+                         <a href="#">Explore More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/webdes.jpg"
+                    width="400" 
+                    height="400">
+                    <div class="layer">
+                        <h3>Portfolio Site</h3>
+                        <p>The Website acts as a personal Resume and share all work details</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/video.jpg"
+                    width="400" 
+                    height="400">
+                    <div class="layer">
+                        <h3>Video Editing</h3>
+                        <p>Edit all sort video editing techniques including color granding,sound design and transitions</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/photoedit.jpg"
+                    width="400" 
+                    height="400">
+                    <div class="layer">
+                        <h3>Graphic Designing</h3>
+                        <p>Edit all sort of visually stunning graphics and logos</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+        <!---CONTACT-->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1 class="sub">CONTACT ME</h1>
+                        <div class="call"> <p><i class="fa-solid fa-paper-plane"></i>@raswin674@gmail.com</p><br>
+                            <p><i class="fa-solid fa-phone"></i>+91 7012554231</p></div>
+                       
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/aswinraj____"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aswin-raj-729a5a251"><i class="fa-brands fa-linkedin"></i></a>
+                           
+                        </div>
+                        <a href="images/Resume.pdf" download="Resume" class="btn">Download Resume</a>
+                    </div>
+                    <div class="contactright">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn2"><span>Submit</span></button>
+                        </form>
+                        <span id="msg">Once you submit wait for a few seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @azwn made by <i class="fa-solid fa-cloud-bolt"></i> aswin raj</p>
+            </div>
+        </div>
+    
+    <script>
+
+        var Tablinks=document.getElementsByClassName("Tab-links");
+        var Tabcontains=document.getElementsByClassName("tabcontains");
+
+        function opentab(tabename){
+            for(Tablink of Tablinks){
+                Tablink.classList.remove("activelink");
+            }
+            for(tabcontain of Tabcontains){
+                tabcontain.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabename).classList.add("activetab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu"); 
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-150px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzLKLVHZDe6Y0TaJzc1ulzo5PbNZPKBKlUZe3nhFJJrCPmvOaMN2ntVhgk-fC5RLfPqOw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
